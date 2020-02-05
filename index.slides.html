@@ -13294,7 +13294,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="pytest-demo---01_test_code_add">pytest demo - 01_test_code_add<a class="anchor-link" href="#pytest-demo---01_test_code_add">&#182;</a></h2>
+<h2 id="pytest-demo---01_test_code_add.py">pytest demo - <a href="01_test_code_add.py">01_test_code_add.py</a><a class="anchor-link" href="#pytest-demo---01_test_code_add.py">&#182;</a></h2>
 </div>
 </div>
 </div><div class="fragment">
@@ -13329,7 +13329,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="pytest-demo---02_test_code_add">pytest demo - 02_test_code_add<a class="anchor-link" href="#pytest-demo---02_test_code_add">&#182;</a></h2>
+<h2 id="pytest-demo---02_test_code_add.py">pytest demo - <a href="02_test_code_add.py">02_test_code_add.py</a><a class="anchor-link" href="#pytest-demo---02_test_code_add.py">&#182;</a></h2>
 </div>
 </div>
 </div><div class="fragment">
@@ -13655,8 +13655,16 @@ given(*_given_arguments, **_given_kwargs)
 <li>pytest integration</li>
 <li>strategies for most common types</li>
 <li>composite strategy to generate new strategies</li>
-<li>compositional shrinking of examples</li>
-<li>a database of failing examples to check regressions</li>
+<li>compositional shrinking of examples<ul>
+<li><a href="https://hypothesis.works/articles/integrated-shrinking/">Integrated shrinking on hypothesis</a>  </li>
+<li><a href="https://hypothesis.works/articles/compositional-shrinking/">Compositional Shrinking on hypothesis</a>  </li>
+</ul>
+</li>
+<li>a database of failing examples to check regressions<ul>
+<li>read this <a href="https://hypothesis.works/articles/anatomy-of-a-test/">Anatomy of a Hypothesis Based Test</a></li>
+</ul>
+</li>
+<li><a href="https://hypothesis.readthedocs.io/en/latest/numpy.html">Hypothesis for the Scientific Stack</a>: pandas/numpy strategies</li>
 </ul>
 
 </div>
@@ -13691,17 +13699,15 @@ given(*_given_arguments, **_given_kwargs)
 
 </div>
 </div>
-</div><aside class="notes">
-
+</div></div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>run 04_my_sort.py</p>
+<p><a href="04_my_sort.py">Let's see how that looks</a></p>
 
 </div>
 </div>
-</div>
-</aside></div></section></section><section><section>
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13709,17 +13715,15 @@ given(*_given_arguments, **_given_kwargs)
 
 </div>
 </div>
-</div><aside class="notes">
-
+</div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>run 05_binary_encoder.py</p>
+<p><a href="05_binary_encoder.py">An example with a binary encoder/decoder</a></p>
 
 </div>
 </div>
-</div>
-</aside><aside class="notes">
+</div><aside class="notes">
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -13763,7 +13767,7 @@ given(*_given_arguments, **_given_kwargs)
 </div>
 
 </div>
-</aside></section></section><section><section>
+</aside></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13792,17 +13796,15 @@ $</p>
 
 </div>
 </div>
-</div><aside class="notes">
-
+</div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>run 06_coins.py</p>
+<p><a href="06_coins.py">Let hypothesis find one for us</a></p>
 
 </div>
 </div>
-</div>
-</aside></section></section><section><section>
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13810,23 +13812,19 @@ $</p>
 
 </div>
 </div>
-</div><aside class="notes">
-
+</div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>run 07_prime_generator.py</p>
+<p>We can see an example with <a href="07_prime_generator.py">a prime numbers generator</a></p>
 
 </div>
 </div>
-</div>
-</aside></section></section><section><section>
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Cool-readings">Cool readings<a class="anchor-link" href="#Cool-readings">&#182;</a></h1><p><a href="https://hypothesis.works/articles/integrated-shrinking/">Integrated shrinking on hypothesis</a><br>
-<a href="https://hypothesis.works/articles/compositional-shrinking/">Compositional Shrinking on hypothesis</a><br>
-<a href="https://fsharpforfunandprofit.com/posts/property-based-testing-2/">Choosing properties for property-based testing</a></p>
+<h1 id="Cool-readings-&amp;-resources">Cool readings &amp; resources<a class="anchor-link" href="#Cool-readings-&amp;-resources">&#182;</a></h1><p><a href="https://fsharpforfunandprofit.com/posts/property-based-testing-2/">Choosing properties for property-based testing</a></p>
 
 </div>
 </div>
