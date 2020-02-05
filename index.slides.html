@@ -13773,8 +13773,9 @@ given(*_given_arguments, **_given_kwargs)
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="The-change-making-problem">The change making problem<a class="anchor-link" href="#The-change-making-problem">&#182;</a></h2><p>Let $S = \{w_1, w_2, \ldots, w_n \mid w_i &lt; w_j \forall i &lt; j, w_i \in \Re \}$ a coin system</p>
-<p>Let $W \in \mathbb{Z}$.</p>
+<h2 id="The-change-making-problem">The change making problem<a class="anchor-link" href="#The-change-making-problem">&#182;</a></h2><p>Let $S = \{w_1, w_2, \ldots, w_n \mid w_i &lt; w_j \forall i &lt; j, w_i \in \mathbb{Z}^+ \}$ a coin system ($1$ should <em>always</em> be present)</p>
+<p>Let $W \in \mathbb{Z}^+$.</p>
+<p>Let $x_i$ be the amount of coins of denomination $w_i$</p>
 <p>$
 \begin{equation*}
 \begin{aligned}
@@ -13785,7 +13786,7 @@ given(*_given_arguments, **_given_kwargs)
 \end{aligned}
 \end{equation*}
 $</p>
-<p>And let $S$ be defined as canonical if $G_r(W,S) = D_p(W,S) \forall W$</p>
+<p>And let $S$ be tagged as canonical if $G_r(W,S) = D_p(W,S) \forall W$ where $G_r$ is the solution provided by the greedy algorithm and $D_p$ the dynamic programming solution.</p>
 <p>How can we find a non-canonical system?</p>
 
 </div>
