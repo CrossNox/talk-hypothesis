@@ -16,10 +16,4 @@ def test_code_add_identity(a):
 
 @given(st.integers(), st.integers(), st.integers())
 def test_code_add_associativity(a, b, c):
-    assert add_numbers(
-        a,
-        add_numbers(b, c)
-    ) == add_numbers(
-        add_numbers(a, b),
-        c
-    )
+    assert add_numbers(a, add_numbers(b, c)) == add_numbers(add_numbers(a, b), c)
